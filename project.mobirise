@@ -50,14 +50,15 @@
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
     "cookiesAlert": false,
-    "gdpr": false
+    "gdpr": false,
+    "screenshot": "screenshot.png"
   },
   "pages": {
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
+        "title": "Фриланс",
+        "meta_descr": "Топ профессий с высоким заработком онлайн.",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
