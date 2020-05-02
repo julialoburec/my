@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "zarabotai.com",
-    "currentPage": "index.html",
+    "currentPage": "kopiraiting.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -28,6 +28,8 @@
         "isScrollToTopButton": true
       },
       "additionalSetColors": [
+        "#0b1e63",
+        "#15697c",
         "#efc7a2",
         "#faeded",
         "#c7b0b0",
@@ -2033,7 +2035,7 @@
               "font-weight": "300"
             },
             ".mbr-content-text": {
-              "color": "#292929",
+              "color": "#ffffff",
               "margin-bottom": "0"
             },
             ".card": {
@@ -2109,7 +2111,10 @@
               "flex-direction": "row-reverse"
             },
             ".mbr-section-title": {
-              "color": "#4f4943"
+              "color": "#0b1e63"
+            },
+            "H4": {
+              "color": "#0b1e63"
             }
           },
           "_name": "counters3",
