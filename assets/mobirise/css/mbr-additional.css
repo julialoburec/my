@@ -1192,97 +1192,12 @@ section.lazy-placeholder:after {
   opacity: 1;
 }
 .cid-rXQ5PRcu6U .mbr-section-title {
-  color: #ffffff;
+  color: #cc201a;
 }
 .cid-rXQ5PRcu6U .mbr-section-subtitle {
   color: #faeded;
 }
 .cid-rXQ5PRcu6U .mbr-text {
-  color: #4f4943;
-  text-align: left;
-}
-.cid-rXQapROHmg {
-  padding-top: 0px;
-  padding-bottom: 90px;
-  background-color: #cebfaf;
-}
-.cid-rXQapROHmg .mbr-section-subtitle,
-.cid-rXQapROHmg .mbr-text {
-  color: #767676;
-}
-.cid-rXQapROHmg .card {
-  display: -webkit-flex;
-  position: relative;
-  justify-content: center;
-  -webkit-justify-content: center;
-}
-.cid-rXQapROHmg .card-wrapper {
-  height: 100%;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-  transition: box-shadow 0.3s;
-}
-.cid-rXQapROHmg .card-wrapper .card-img {
-  display: -webkit-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  -webkit-flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-justify-content: center;
-}
-.cid-rXQapROHmg .card-wrapper .card-img .mbr-overlay {
-  background-color: #efc7a2;
-  display: none;
-  transition: opacity .3s;
-}
-.cid-rXQapROHmg .card-wrapper .card-img .mbr-section-btn {
-  position: absolute;
-  transition: opacity .3s;
-  width: 100%;
-  left: 0;
-  top: 50%;
-  height: auto;
-  transform: translateY(-50%);
-}
-.cid-rXQapROHmg .card-wrapper .card-img img {
-  width: 100%;
-}
-.cid-rXQapROHmg .card-wrapper .card-box {
-  background-color: #efc7a2;
-  padding: 0 2rem 2rem 2rem;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.cid-rXQapROHmg .card-wrapper .card-box h4 {
-  font-weight: 500;
-  margin-bottom: 0;
-  padding-top: 2rem;
-}
-.cid-rXQapROHmg .card-wrapper .card-box p {
-  margin-bottom: 0;
-  padding-top: 1.5rem;
-}
-.cid-rXQapROHmg .card-wrapper:hover {
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
-}
-.cid-rXQapROHmg .card-img .mbr-overlay {
-  display: block !important;
-  opacity: 0;
-}
-.cid-rXQapROHmg .card-img .mbr-section-btn {
-  opacity: 0;
-}
-.cid-rXQapROHmg .card-img:hover .mbr-overlay {
-  opacity: .5;
-}
-.cid-rXQapROHmg .card-img:hover .mbr-section-btn {
-  opacity: 1;
-}
-.cid-rXQapROHmg .mbr-text {
   color: #4f4943;
   text-align: left;
 }
