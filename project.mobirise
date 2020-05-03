@@ -31,13 +31,14 @@
         "#cca988",
         "#a03f3f",
         "#f8df8a",
-        "#9c826a"
+        "#9c826a",
+        "#c7b48d"
       ]
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.12.3",
     "siteFonts": [],
-    "uniqCompNum": 12,
+    "uniqCompNum": 13,
     "versionPublish": "4.12.3",
     "imageResize": true,
     "screenshot": "screenshot.png",
@@ -524,82 +525,92 @@
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
-            ".socicon-bg-facebook": {
-              "background": "#3e5b98",
-              "color": "contrast(#3e5b98)"
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
             },
-            ".socicon-bg-twitter": {
-              "background": "#4da7de",
-              "color": "contrast(#4da7de)"
+            ".row-links": {
+              "width": "100%",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
             },
-            ".socicon-bg-googleplus": {
-              "background": "#dd4b39",
-              "color": "contrast(#dd4b39)"
+            ".social-row": {
+              "width": "100%",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
             },
-            ".socicon-bg-vkontakte": {
-              "background": "#5a7fa6",
-              "color": "contrast(#5a7fa6)"
-            },
-            ".socicon-bg-odnoklassniki": {
-              "background": "#f48420",
-              "color": "contrast(#f48420)"
-            },
-            ".socicon-bg-pinterest": {
-              "background": "#c92619",
-              "color": "contrast(#c92619)"
-            },
-            ".socicon-bg-mail": {
-              "background": "#134785",
-              "color": "contrast(#134785)"
-            },
-            ".btn-social": {
-              "font-size": "20px",
-              "border-radius": "50%",
-              "padding": "0",
-              "width": "44px",
-              "height": "44px",
-              "line-height": "44px",
-              "text-align": "center",
-              "position": "relative",
-              "cursor": "pointer",
-              "i": {
-                "top": "0",
-                "line-height": "44px",
-                "width": "44px"
+            ".media-container-row": {
+              "-webkit-flex-direction": "column",
+              "flex-direction": "column",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              ".foot-menu": {
+                "list-style": "none",
+                "display": "flex",
+                "-webkit-justify-content": "center",
+                "justify-content": "center",
+                "-webkit-flex-wrap": "wrap",
+                "flex-wrap": "wrap",
+                "padding": "0",
+                "margin-bottom": "0",
+                "li": {
+                  "padding": "0 1rem 1rem 1rem",
+                  "p": {
+                    "margin": "0"
+                  }
+                }
               },
-              "& + .btn": {
-                "margin-left": ".1rem"
+              ".social-list": {
+                "padding-left": "0",
+                "margin-bottom": "0",
+                "list-style": "none",
+                "display": "flex",
+                "-webkit-flex-wrap": "wrap",
+                "flex-wrap": "wrap",
+                "-webkit-justify-content": "flex-end",
+                "justify-content": "flex-end",
+                ".mbr-iconfont-social": {
+                  "font-size": "1.5rem",
+                  "color": "#ffffff"
+                },
+                ".soc-item": {
+                  "margin": "0 .5rem"
+                },
+                "a": {
+                  "margin": "0",
+                  "opacity": ".5",
+                  "-webkit-transition": ".2s linear",
+                  "transition": ".2s linear",
+                  "&:hover": {
+                    "opacity": "1"
+                  }
+                },
+                "@media (max-width: 767px)": {
+                  "-webkit-justify-content": "center",
+                  "justify-content": "center"
+                }
               },
-              "border": "none !important"
-            },
-            "& when (@squareIcons)": {
-              ".btn-social": {
-                "border-radius": "0 !important"
-              }
-            },
-            "[class^=\"socicon-\"]:before, [class*=\" socicon-\"]:before": {
-              "line-height": "44px"
-            },
-            "@media (max-width: 767px)": {
-              ".btn": {
-                "font-size": "20px !important"
+              ".row-copirayt": {
+                "word-break": "break-word",
+                "width": "100%",
+                "p": {
+                  "width": "100%"
+                }
               }
             }
           },
-          "_name": "social-buttons3",
-          "_customHTML": "<section group=\"Social\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" plugins=\"SocialLikes,Socicon\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input inline=\"\" type=\"range\" title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input inline=\"\" type=\"range\" title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Квадратные иконки\" name=\"squareIcons\">\n        <header>Совместно использовать текущую страницу</header>\n        <input type=\"checkbox\" title=\"Facebook\" name=\"facebook\" checked=\"\">\n        <input type=\"checkbox\" title=\"Twitter\" name=\"twitter\" checked=\"\">\n        <input type=\"checkbox\" title=\"ВКонтакте\" name=\"vkontakte\" checked=\"\">\n        <input type=\"checkbox\" title=\"Одноклассники\" name=\"odnoklassniki\" checked=\"\">\n        <input type=\"checkbox\" title=\"Pinterest\" name=\"pinterest\" checked=\"\">\n        <input type=\"checkbox\" title=\"Mail.ru\" name=\"mailru\" checked=\"\">\n        \n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background4.jpg\" parallax=\"\">\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\" selected=\"\">\n            <input type=\"video\" title=\"Фоновое видео\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-md-8 align-center\">\n                <h2 class=\"pb-3 mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title \">\n                    ПОДЕЛИТЕСЬ ЭТОЙ СТРАНИЦЕЙ!\n                </h2>\n                <div>\n                    <div class=\"mbr-social-likes\">\n                        <span mbr-if=\"facebook\" class=\"btn btn-social socicon-bg-facebook facebook mx-2\" title=\"Поделиться в Facebook\">\n                            <i class=\"socicon socicon-facebook\"></i>\n                        </span>\n                        <span mbr-if=\"twitter\" class=\"btn btn-social twitter socicon-bg-twitter mx-2\" title=\"Поделиться в Twitter\">\n                            <i class=\"socicon socicon-twitter\"></i>\n                        </span>\n                        <span mbr-if=\"vkontakte\" class=\"btn btn-social vkontakte socicon-bg-vkontakte mx-2\" title=\"Поделиться в VK\">\n                            <i class=\"socicon socicon-vkontakte\"></i>\n                        </span>\n                        <span mbr-if=\"odnoklassniki\" class=\"btn btn-social odnoklassniki socicon-bg-odnoklassniki mx-2\" title=\"Поделиться в OK\">\n                            <i class=\"socicon socicon-odnoklassniki\"></i>\n                        </span>\n                        <span mbr-if=\"pinterest\" class=\"btn btn-social pinterest socicon-bg-pinterest mx-2\" title=\"Поделиться в Pinterest\">\n                            <i class=\"socicon socicon-pinterest\"></i>\n                        </span>\n                        <span mbr-if=\"mailru\" class=\"btn btn-social mailru socicon-bg-mail mx-2\" title=\"Поделиться в Mail.ru\">\n                            <i class=\"socicon socicon-mail\"></i>\n                        </span>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n",
-          "_cid": "rXVJsa3D8C",
-          "_anchor": "social-buttons3-7",
+          "_name": "footer7",
+          "_customHTML": "<section group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Пункты меню\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Соцсети\" name=\"socialItems\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Эффект появления\" name=\"reveal\" checked>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Цвет фона\" value=\"#2e2e2e\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"row row-links\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu\" mbr-list mbr-list-grow=\"menuItems\">\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\">\n                        <a class=\"text-white mbr-bold\" href=\"#\" target=\"_blank\">О нас</a>\n                    </li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\">\n                        <a class=\"text-white mbr-bold\" href=\"#\" target=\"_blank\">Сервис</a>\n                    </li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\">\n                        <a class=\"text-white mbr-bold\" href=\"#\" target=\"_blank\">Связаться</a>\n                    </li>\n                    \n                    \n                </ul>\n            </div>\n            <div class=\"row social-row\" mbr-if=\"socialItems > 0\">\n                <div mbr-list mbr-list-grow=\"socialItems\" class=\"social-list align-right pb-2\">\n                    <div class=\"soc-item\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\">\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n                            <span mbr-icon class=\"socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\">\n                        <a href=\"https://www.youtube.com/c/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"socicon-youtube socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                    \n                    \n                    \n                </div>\n            </div>\n            <div class=\"row row-copirayt\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\">\n                    © Твой фотограф Юлия Л.</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rXWjyQAc9A",
           "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
+          "_global": true,
+          "_once": "footers",
+          "_params": {},
+          "_anchor": "footer7-c"
         }
       ]
     }
