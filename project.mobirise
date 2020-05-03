@@ -1,6 +1,6 @@
 {
   "settings": {
-    "name": "Site-05-03_1353",
+    "name": "Happy New Year",
     "currentPage": "happynewyear.html",
     "theme": {
       "name": "mobirise4",
@@ -43,7 +43,15 @@
     ],
     "uniqCompNum": 7,
     "versionPublish": "4.12.3",
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "favicon": false,
+    "imageResize": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false
   },
   "pages": {
     "happynewyear.html": {
